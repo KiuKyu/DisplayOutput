@@ -1,10 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<!--BT1 : Show result with alert-->
+<button type="button" onclick="showAlert();">Show result with alert!</button>
+<br>
+<!--BT2 : Show result with HTML tag:-->
+<div id="messageDiv"></div>
+<button type="button" onclick="showTag();">Show result with HTML tag!</button>
+<br>
+<!--BT3 : Show result with document.write-->
+<button type="button" onclick="docWrite()">Show result with document.write</button>
+<br>
+<!--BT4 : Show result with console.log-->
+<button type="button" onclick="conLog()">Show result with console.log</button>
+<script>
+    function showAlert() {
+        alert('Xin chào!');
+    }
+    function docWrite(){
+        document.write('Xin chào!');
+    }
+    function showTag() {
+        document.getElementById('messageDiv').innerHTML = 'Xin chào!';
+    }
+    function conLog() {
+        console.log('Xin chào!');
+    }
+</script>
 </body>
 </html>
